@@ -1,0 +1,14 @@
+
+header {
+  margin-top: 30px;
+  color: #2e99a9;
+}
+
+.align-right {
+  text-align: right;
+}
+
+hr{
+  border-top-width: 3px;
+  border-color: #2e99a9;
+}

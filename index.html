@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ご利用アンケート</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+    <div class="row">
+      <div class="col-sm-6">ご利用アンケート</div>
+      <a class="col-sm-6 align-right" href="#" target="_blank">HOMEへ戻る</a>
+    </div>
+    </header>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="col-sm-8 offset-sm-2">
+      <p>この度は、本書をご利用いただきありがとうございます。
+        恐れ入りますが、以下のフォームにご記入いただき、返信していただけると幸いです。</p>
+      <form action="cgi-bin/formmail.cgi" method="post">
+      <div class="form-group">
+        <label for="name">お名前<span class="badge badge-danger">必須</span></label> 
+        <input id="name" type="text" name="name" value="例）山田太郎" class="form-control">
+      </div>
+      <label for="profession-select">ご職業<span class="badge badge-danger">必須</span></label>
+      <select id="profession-select" class="form-control">
+      <option value="">選択してください</option>
+      <option value="会社員">会社員</option>
+      <option value="公務員">公務員</option>
+      <option value="自営業">自営業</option>
+      <option value="フリーター">フリーター</option>
+      <option value="主婦">主婦</option>
+      <option value="無職">無職</option>
+      </select>
+      <p>知りたい内容（複数回答可）<span class="badge badge-success">任意</span> <br>
+        <input type="checkbox" name="programming language" value="HTML">HTML<br>
+        <input type="checkbox" name="programming language" value="CSS">CSS<br>
+        <input type="checkbox" name="programming language" value="Javascript">Javascript
+      </p>
+      <p>理解度はいかがですか？<span class="badge badge-success">任意</span> <br>
+        <input type="radio" name="understanding" value="can not understand">理解できなかった
+        <input type="radio" name="understanding" value="I was able to understand">だいたい理解できた
+        <input type="radio" name="understanding" value="I understand">理解できた
+        <input type="radio" name="understanding" value="No answer">回答しない
+      </p>
+      <p>ご意見<span class="badge badge-success">任意</span> <br>
+        <textarea name="kanso" rows="8" cols="80"></textarea>
+      </p>
+      <p>
+        <input class="btn btn-secondary" type="submit" value="送信する">
+      </p>
+      </form>
+    </div>
+  </div>
+    <hr>
+    <footer class="conpany">
+    　　©︎H2O space
+    </footer>    
+</body>
+</html>
